@@ -9,6 +9,7 @@
   --secondary-background-color: #2f303a;
   --the-third-background-color: #f5f4fa;
   --primary-svg-color: #afb1b8;
+  --main-animation: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 *,
@@ -83,6 +84,8 @@ img {
 
 .backdrop {
   position: fixed;
+  transform: scale(1);
+  transition: transform 1000ms var(--main-animation), opacity 500ms var(--main-animation);
   top: 0;
   left: 0;
   right: 0;
@@ -92,6 +95,7 @@ img {
 
 .backdrop.is-hidden {
   opacity: 0;
+  transform: scale(0.1);
   pointer-events: none;
 }
 
