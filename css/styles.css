@@ -63,7 +63,7 @@ img {
   color: var(--primary-text-color);
 }
 
-/* ===== Hidden title ===== */
+/* ===== HIDDEN TITLE ===== */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -77,7 +77,50 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/* ===== End hidden title ===== */
+/* ===== END HIDDEN TITLE ===== */
+
+/* ===== MODAL WINDOW ===== */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  min-width: 528px;
+  min-height: 581px;
+  background-color: var(--main-background-color);
+}
+
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--main-background-color);
+  background-image: url(..//images/modal_window/close-modal-window.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+/* ===== END MODAL WINDOW ===== */
 
 /* ===== COMPONENTS ===== */
 .logo {
