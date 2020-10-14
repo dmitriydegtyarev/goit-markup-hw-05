@@ -262,6 +262,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  transition: color 250ms var(--main-animation);
 }
 
 .address-link .link {
@@ -274,6 +275,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  transition: color 250ms var(--main-animation);
 }
 
 .site-nav .link:hover,
