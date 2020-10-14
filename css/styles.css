@@ -114,7 +114,7 @@ img {
   min-width: 528px;
   min-height: 581px;
   background-color: var(--main-background-color);
-  transition-property: transform opacity;
+  transition-property: transform;
   transition-duration: 500ms;
   transition-timing-function: var(--main-animation);
 }
