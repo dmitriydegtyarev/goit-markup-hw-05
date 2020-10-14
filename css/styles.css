@@ -256,7 +256,6 @@ img {
 .site-nav .link {
   display: block;
   padding-top: 32px;
-  padding-bottom: 32px;
 
   color: var(--primary-text-color);
   font-weight: 500;
@@ -286,6 +285,16 @@ img {
 
 .site-nav .link.current {
   color: var(--accent-color);
+}
+
+.nav-list .current::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  margin-top: 28px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
 }
 
 .header-icon {
