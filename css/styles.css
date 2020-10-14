@@ -400,6 +400,28 @@ img {
 .works-list .item:not(:last-child) {
   margin-right: 30px;
 }
+
+.works-list .item {
+  position: relative;
+}
+
+.works-wrapper {
+  position: absolute;
+  pointer-events: none;
+  padding: 27px 80px;
+  left: 0;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.works-subtitle {
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--the-third-text-color);
+  text-transform: uppercase;
+}
 /* ===== END WHAT ARE WE DOING ===== */
 
 /* ===== OUR TEAM ===== */
@@ -439,6 +461,7 @@ img {
   background: var(--main-background-color);
   border-radius: 50%;
   color: var(--primary-svg-color);
+  transition: background-color 250ms var(--main-animation), color 250ms var(--main-animation);
 }
 
 .social-link:hover,
@@ -497,6 +520,7 @@ img {
   border: 1px solid var(--primary-svg-color);
   border-radius: 4px;
   color: var(--primary-svg-color);
+  transition: background-color 250ms var(--main-animation), color 250ms var(--main-animation);
 }
 
 .client-svg {
@@ -574,6 +598,7 @@ img {
   height: 44px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  transition: background-color 250ms var(--main-animation);
 }
 
 .footer-social-link:hover,
